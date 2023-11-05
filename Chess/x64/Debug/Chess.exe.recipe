@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Dev\Chess\Chess\x64\Debug\Chess.exe</FullPath>
+      <FullPath>C:\Dev\Chessfml\Chess\x64\Debug\Chess.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

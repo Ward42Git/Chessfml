@@ -27,6 +27,8 @@ public:
 
     Piece(int pieceType, int color, int tilePos);
 
+    
+
     // METHODS
 
     int MakePiece(int pieceType, int color);

@@ -4,9 +4,11 @@ Piece::Piece(int pieceType, int color, int tilePos) {
     sf::Vector2f coords = Tile2Coords(tilePos);
 
     // LOADING THE TEXTURE BASED ON COLOR AND TYPE
-
     switch (pieceType) {
     case 0:
+
+        std::cout << "Empty Piece Created at: " << tilePos << "\n";
+
         break;
     case 1:
 
@@ -22,31 +24,139 @@ Piece::Piece(int pieceType, int color, int tilePos) {
         }
 
         if (color == 8) {
-            if (!this->m_texture.loadFromFile(
-                "Images/black_pawn.png",
-                sf::IntRect(coords.x, coords.y, 60, 60))) {
+            if (!this->m_texture.loadFromFile("Images/black_pawn.png")) {
                 std::cout << pieceType << ":  Error loading texture"
                     << "\n";
             }
 
             this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
         }
 
         break;
     case 2:
+
+        if (color == 0) {
+            if (!this->m_texture.loadFromFile("Images/white_knight.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
+
+        if (color == 8) {
+            if (!this->m_texture.loadFromFile("Images/black_knight.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
         break;
     case 3:
+        if (color == 0) {
+            if (!this->m_texture.loadFromFile("Images/white_bishop.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
+
+        if (color == 8) {
+            if (!this->m_texture.loadFromFile("Images/black_bishop.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
+
         break;
     case 4:
+        if (color == 0) {
+            if (!this->m_texture.loadFromFile("Images/white_rook.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
+
+        if (color == 8) {
+            if (!this->m_texture.loadFromFile("Images/black_rook.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
         break;
     case 5:
+        if (color == 0) {
+            if (!this->m_texture.loadFromFile("Images/white_queen.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
+
+        if (color == 8) {
+            if (!this->m_texture.loadFromFile("Images/black_queen.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
         break;
     case 6:
+        if (color == 0) {
+            if (!this->m_texture.loadFromFile("Images/white_king.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
+
+        if (color == 8) {
+            if (!this->m_texture.loadFromFile("Images/black_king.png")) {
+                std::cout << pieceType << ":  Error loading texture"
+                    << "\n";
+            }
+
+            this->m_sprite.setTexture(this->m_texture);
+
+            this->m_sprite.setPosition(coords);
+        }
         break;
     default:
         std::cout << pieceType << ":  Error loading texture"
             << "\n";
     }
+
 }
 
 sf::Vector2f Piece::Tile2Coords(int tilePos) {

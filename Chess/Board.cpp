@@ -1,5 +1,7 @@
 #include "Board.h"
 
+
+
 Board::Board(sf::Color White, sf::Color Black) {
     for (int i = 0; i < 64; i++) {
         board.push_back(i);
@@ -24,8 +26,88 @@ Board::Board(sf::Color White, sf::Color Black) {
     }
 }
 
-void Board::Render(sf::RenderWindow& window) {
-    for (auto tile : squares) {
-        window.draw(tile);
+
+
+
+
+void Board::draw(sf::RenderTarget& target, sf::RenderStates states) const
+{
+    int row = 0;
+    int column = 0;
+
+    int cNUM;
+
+    for (int i = 0; i < 64; i++)
+    {
+        char c = boardFEN[i];
+
+        //skip row if '/' is found
+        if (c == '/') { row++; };
+
+        // check to see if its a digit, skip that many squares
+        if (std::isdigit(c) != 0)
+        {
+            std::cout << "I = " << i << " + " << c << "\n";
+            i += (c - '0');
+        }
+
+
+        
+        switch (c)
+        {
+        case('p'):
+
+            
+            
+            
+
+            break;
+
+        case('n'):
+            break;
+
+        case('b'):
+            break;
+
+        case('r'):
+            break;
+
+        case('q'):
+            break;
+
+        case('k'):
+            break;
+
+        // WHITE]
+
+        case('P'):
+            break;
+
+        case('N'):
+            break;
+
+        case('B'):
+            break;
+
+        case('R'):
+            break;
+
+        case('Q'):
+            break;
+
+        case('K'):
+            break;
+
+        default:
+
+            std::cout << "ERROR READING FEN" << "\n";
+            
+            break;
+        }
+    }
+
+    for (auto tile : squares)
+    {
+        target.draw(tile, states);
     }
 }

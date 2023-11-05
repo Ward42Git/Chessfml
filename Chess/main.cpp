@@ -7,10 +7,13 @@
 int main() {
     sf::RenderWindow window(sf::VideoMode(512, 512), "CHESSFML");
 
+
     Board board(sf::Color::Color(255, 239, 213, 255),
         sf::Color::Color(206, 133, 63, 255));
 
-    Piece piece(1, 0, 0);
+    Piece piece(6, 0, 63);
+
+    
 
     while (window.isOpen()) {
         sf::Event event;
@@ -20,9 +23,13 @@ int main() {
 
         window.clear();
 
-        board.Render(window);
+        window.draw(board);
+
 
         window.draw(piece);
+        
+
+ 
 
         window.display();
     }
