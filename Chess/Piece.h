@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 
+#include "Constants.h"
+
 class Piece : public sf::Drawable {
 public:
     // PIECE TYPES
@@ -23,19 +25,23 @@ public:
 
     sf::Sprite m_sprite;
 
+    int m_tile;
+
+    sf::Vector2f m_coords;
+
     // CONSTRUCTOR
 
     Piece(int pieceType, int color, int tilePos);
 
     
 
+
     // METHODS
 
-    int MakePiece(int pieceType, int color);
+    static sf::Vector2f Tile2Coords(int tilePos);
 
-    int MovePiece(Piece* piece, int targetTile);
+    static int Coords2Tile(sf::Vector2f coordPos);
 
-    sf::Vector2f Tile2Coords(int tilePos);
 
 private:
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;

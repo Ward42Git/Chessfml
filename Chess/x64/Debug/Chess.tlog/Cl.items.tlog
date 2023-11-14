@@ -1,3 +1,4 @@
-C:\Dev\Chessfml\Chess\Board.cpp;C:\Dev\Chessfml\Chess\x64\Debug\Board.obj
-C:\Dev\Chessfml\Chess\main.cpp;C:\Dev\Chessfml\Chess\x64\Debug\main.obj
-C:\Dev\Chessfml\Chess\Piece.cpp;C:\Dev\Chessfml\Chess\x64\Debug\Piece.obj
+C:\Dev\Chess\Chessfml\Chess\Board.cpp;C:\Dev\Chess\Chessfml\Chess\x64\Debug\Board.obj
+C:\Dev\Chess\Chessfml\Chess\Constants.cpp;C:\Dev\Chess\Chessfml\Chess\x64\Debug\Constants.obj
+C:\Dev\Chess\Chessfml\Chess\main.cpp;C:\Dev\Chess\Chessfml\Chess\x64\Debug\main.obj
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp;C:\Dev\Chess\Chessfml\Chess\x64\Debug\Piece.obj

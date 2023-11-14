@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 
+#include "Constants.h"
 #include "Piece.h"
 
 class Board : public sf::Drawable {

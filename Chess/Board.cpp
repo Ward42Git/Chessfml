@@ -15,9 +15,9 @@ Board::Board(sf::Color White, sf::Color Black) {
         for (int j = 0; j < 8; j++) {
             sf::RectangleShape square;
 
-            square.setSize(sf::Vector2f(64, 64));
+            square.setSize(sf::Vector2f(64 * SIZE_MULTIPLIER, 64 * SIZE_MULTIPLIER));
             square.setFillColor(even == true ? White : Black);
-            square.setPosition(sf::Vector2f(64 * j, 64 * i));
+            square.setPosition(sf::Vector2f(64 * SIZE_MULTIPLIER * j, 64 * SIZE_MULTIPLIER * i));
 
             even = !even;
 

@@ -21,6 +21,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
 
         if (color == 8) {
@@ -32,6 +34,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
 
         break;
@@ -46,6 +50,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
 
         if (color == 8) {
@@ -57,6 +63,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
         break;
     case 3:
@@ -69,6 +77,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
 
         if (color == 8) {
@@ -80,6 +90,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
 
         break;
@@ -93,6 +105,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
 
         if (color == 8) {
@@ -104,6 +118,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
         break;
     case 5:
@@ -116,6 +132,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
 
         if (color == 8) {
@@ -127,6 +145,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
         break;
     case 6:
@@ -139,6 +159,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
 
         if (color == 8) {
@@ -150,6 +172,8 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             this->m_sprite.setTexture(this->m_texture);
 
             this->m_sprite.setPosition(coords);
+
+            this->m_sprite.setScale(sf::Vector2f(SIZE_MULTIPLIER, SIZE_MULTIPLIER));
         }
         break;
     default:
@@ -157,6 +181,10 @@ Piece::Piece(int pieceType, int color, int tilePos) {
             << "\n";
     }
 
+    // SETTING MEMBER VALUES
+
+    m_tile = tilePos;
+    m_coords = coords;
 }
 
 sf::Vector2f Piece::Tile2Coords(int tilePos) {
@@ -175,9 +203,16 @@ sf::Vector2f Piece::Tile2Coords(int tilePos) {
         }
     }
 
-    std::cout << 64 * column << ", " << 64 * row << "\n";
+    std::cout << 64 * SIZE_MULTIPLIER * column << ", " << 64 * SIZE_MULTIPLIER * row << "\n";
 
-    return sf::Vector2f(64 * column, 64 * row);
+    return sf::Vector2f(64 * SIZE_MULTIPLIER * column, 64 * SIZE_MULTIPLIER * row);
+}
+
+int Piece::Coords2Tile(sf::Vector2f coordPos)
+{
+
+
+    return 0;
 }
 
 void Piece::draw(sf::RenderTarget& target, sf::RenderStates states) const {
