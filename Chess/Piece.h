@@ -8,6 +8,7 @@ class Piece : public sf::Drawable {
 public:
     // PIECE TYPES
 
+    /*
     int None = 0;
     int Pawn = 1;
     int Knight = 2;
@@ -15,6 +16,8 @@ public:
     int Rook = 4;
     int Queen = 5;
     int King = 6;
+    */
+    int m_pieceType = 0; 
 
     int white = 0;
     int black = 8;
@@ -42,6 +45,7 @@ public:
 
     static int Coords2Tile(sf::Vector2f coordPos);
 
+    static void setPosition(Piece* target, int tilePos);
 
 private:
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;

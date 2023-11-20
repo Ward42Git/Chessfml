@@ -100,7 +100,7 @@ void Board::draw(sf::RenderTarget& target, sf::RenderStates states) const
 
         default:
 
-            std::cout << "ERROR READING FEN" << "\n";
+            //std::cout << "ERROR READING FEN" << "\n";
             
             break;
         }

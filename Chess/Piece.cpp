@@ -3,6 +3,8 @@
 Piece::Piece(int pieceType, int color, int tilePos) {
     sf::Vector2f coords = Tile2Coords(tilePos);
 
+    m_pieceType = pieceType;
+
     // LOADING THE TEXTURE BASED ON COLOR AND TYPE
     switch (pieceType) {
     case 0:
@@ -203,7 +205,7 @@ sf::Vector2f Piece::Tile2Coords(int tilePos) {
         }
     }
 
-    std::cout << 64 * SIZE_MULTIPLIER * column << ", " << 64 * SIZE_MULTIPLIER * row << "\n";
+    //std::cout << 64 * SIZE_MULTIPLIER * column << ", " << 64 * SIZE_MULTIPLIER * row << "\n";
 
     return sf::Vector2f(64 * SIZE_MULTIPLIER * column, 64 * SIZE_MULTIPLIER * row);
 }
@@ -212,9 +214,22 @@ int Piece::Coords2Tile(sf::Vector2f coordPos)
 {
 
 
-    return 0;
+    int x = coordPos.x/64;
+    int y = coordPos.y/64;
+
+
+
+    return x+y;
 }
 
+void Piece::setPosition(Piece* target, int tilePos)
+{
+    target->m_sprite.setPosition(Tile2Coords(tilePos));
+}
+
+
+
 void Piece::draw(sf::RenderTarget& target, sf::RenderStates states) const {
+    
     target.draw(m_sprite, states);
 }
