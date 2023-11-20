@@ -1,1 +1,166 @@
-﻿  Chess.vcxproj -> C:\Dev\Chess\Chessfml\Chess\x64\Debug\Chess.exe
+﻿  Board.cpp
+C:\Dev\Chess\Chessfml\Chess\Board.cpp(16,66): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Board.cpp(16,44): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Board.cpp(18,92): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Board.cpp(18,66): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Board.cpp(31,9): warning C4101: 'cNUM': unreferenced local variable
+  Piece.cpp
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(27,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(27,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(40,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(40,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(56,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(56,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(69,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(69,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(83,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(83,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(96,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(96,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(111,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(111,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(124,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(124,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(138,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(138,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(151,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(151,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(165,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(165,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(178,67): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(178,50): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(210,77): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(210,46): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(214,11): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Dev\Chess\Chessfml\Chess\Piece.cpp(215,11): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  main.cpp
+  Generating Code...
+  Chess.vcxproj -> C:\Dev\Chess\Chessfml\Chess\x64\Debug\Chess.exe

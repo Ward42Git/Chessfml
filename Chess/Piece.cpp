@@ -205,31 +205,22 @@ sf::Vector2f Piece::Tile2Coords(int tilePos) {
         }
     }
 
-    //std::cout << 64 * SIZE_MULTIPLIER * column << ", " << 64 * SIZE_MULTIPLIER * row << "\n";
+    // std::cout << 64 * SIZE_MULTIPLIER * column << ", " << 64 * SIZE_MULTIPLIER * row << "\n";
 
     return sf::Vector2f(64 * SIZE_MULTIPLIER * column, 64 * SIZE_MULTIPLIER * row);
 }
 
-int Piece::Coords2Tile(sf::Vector2f coordPos)
-{
+int Piece::Coords2Tile(sf::Vector2f coordPos) {
+    int x = coordPos.x / 64;
+    int y = coordPos.y / 64;
 
-
-    int x = coordPos.x/64;
-    int y = coordPos.y/64;
-
-
-
-    return x+y;
+    return x + y;
 }
 
-void Piece::setPosition(Piece* target, int tilePos)
-{
+void Piece::setPosition(Piece* target, int tilePos) {
     target->m_sprite.setPosition(Tile2Coords(tilePos));
 }
 
-
-
 void Piece::draw(sf::RenderTarget& target, sf::RenderStates states) const {
-    
     target.draw(m_sprite, states);
 }

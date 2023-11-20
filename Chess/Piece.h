@@ -17,7 +17,7 @@ public:
     int Queen = 5;
     int King = 6;
     */
-    int m_pieceType = 0; 
+    int m_pieceType = 0;
 
     int white = 0;
     int black = 8;
@@ -35,9 +35,6 @@ public:
     // CONSTRUCTOR
 
     Piece(int pieceType, int color, int tilePos);
-
-    
-
 
     // METHODS
 

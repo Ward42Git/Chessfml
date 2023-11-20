@@ -1,7 +1,5 @@
 #include "Board.h"
 
-
-
 Board::Board(sf::Color White, sf::Color Black) {
     for (int i = 0; i < 64; i++) {
         board.push_back(i);
@@ -26,88 +24,75 @@ Board::Board(sf::Color White, sf::Color Black) {
     }
 }
 
-
-
-
-
-void Board::draw(sf::RenderTarget& target, sf::RenderStates states) const
-{
+void Board::draw(sf::RenderTarget& target, sf::RenderStates states) const {
     int row = 0;
     int column = 0;
 
     int cNUM;
 
-    for (int i = 0; i < 64; i++)
-    {
+    for (int i = 0; i < 64; i++) {
         char c = boardFEN[i];
 
-        //skip row if '/' is found
-        if (c == '/') { row++; };
+        // skip row if '/' is found
+        if (c == '/') {
+            row++;
+        };
 
         // check to see if its a digit, skip that many squares
-        if (std::isdigit(c) != 0)
-        {
+        if (std::isdigit(c) != 0) {
             std::cout << "I = " << i << " + " << c << "\n";
             i += (c - '0');
         }
 
-
-        
-        switch (c)
-        {
-        case('p'):
-
-            
-            
-            
+        switch (c) {
+        case ('p'):
 
             break;
 
-        case('n'):
+        case ('n'):
             break;
 
-        case('b'):
+        case ('b'):
             break;
 
-        case('r'):
+        case ('r'):
             break;
 
-        case('q'):
+        case ('q'):
             break;
 
-        case('k'):
+        case ('k'):
             break;
 
-        // WHITE]
+            // WHITE]
 
-        case('P'):
+        case ('P'):
             break;
 
-        case('N'):
+        case ('N'):
             break;
 
-        case('B'):
+        case ('B'):
             break;
 
-        case('R'):
+        case ('R'):
             break;
 
-        case('Q'):
+        case ('Q'):
             break;
 
-        case('K'):
+        case ('K'):
             break;
 
         default:
 
-            //std::cout << "ERROR READING FEN" << "\n";
-            
+            // std::cout << "ERROR READING FEN" << "\n";
+
             break;
         }
     }
 
-    for (auto tile : squares)
-    {
+    for (auto tile : squares) {
         target.draw(tile, states);
     }
 }
